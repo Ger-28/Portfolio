@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    min-width: 100%;
+}
+
+body{
+    margin-top: 50px;
+    font-family: 'Inconsolata', sans-serif;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: green;
+}
+
+#logo{
+    width: 4%;
+    height: 4%;
+    margin-left: 1%;
+}
+
+#intro{
+    text-align: center;
+}
+
+#about h2{
+    text-align: center;
+}
+
+#img-about{
+    height: 15%;
+    width: 15%;
+}
+
+.container-about{
+    flex-direction: row;
+    display: flex;
+    margin:2%;
+    align-items: center;
+}
+
+.quiensoy{
+    margin-left: 2%;
+}
+
+.quiensoy h3{
+    margin-top: -1%;
+}
