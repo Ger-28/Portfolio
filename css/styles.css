@@ -6,16 +6,22 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     position: fixed;
     top: 0;
     z-index: 999;
     min-width: 100%;
+    box-shadow: 0px 5px 3px;
 }
 
 body{
     margin-top: 50px;
     font-family: 'Inconsolata', sans-serif;
+    background-color: #2b2b30;
 }
 
 .navBar{
@@ -61,19 +67,38 @@ body{
 #img-about{
     height: 15%;
     width: 15%;
+    margin: 10px;
 }
 
 .container-about{
     flex-direction: row;
     display: flex;
-    margin:2%;
+    margin-right: 10%;
+    margin-left: 2%;
+    margin-top: 5%;
     align-items: center;
+    background-color: black;
+    border-top-right-radius: 150px 150px;
+    border-bottom-right-radius: 150px 150px;
+    box-shadow: 5px 5px 5px green;
+
+
 }
 
 .quiensoy{
-    margin-left: 2%;
+    color: #EAEBED;
+    /*border: 2px solid rgb(1, 92, 1);*/
+    
+}
+
+.quiensoy p{
+    
+    margin-right: 4%;
+    margin-bottom: 1%;
 }
 
 .quiensoy h3{
-    margin-top: -1%;
+    
+    
+    color: #EAEBED;
 }
