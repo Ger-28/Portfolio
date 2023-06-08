@@ -158,12 +158,19 @@ body{
     height: 15%;
     width: 15%;
     margin: 10px;
+    min-height: 120px;
+    min-width: 120px;
 }
 
-#img-project{
-    height: 100%;
-    width: 100%;
+.img-project{
+    
+    min-height: 104px;
+    min-width: 170px;
+    max-width: 170px;
+    max-height: 104px;
+    background-color: white;
 }
+
 
 .container-about{
     flex-direction: row;
@@ -174,7 +181,7 @@ body{
     border-bottom-left-radius: 20px 20px;
     border-bottom-right-radius: 50px 50px;
     box-shadow: 5px 5px 10px green;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
 }
 
 .container-about a{
@@ -191,13 +198,12 @@ body{
     border-bottom-left-radius: 20px 20px;
     border-bottom-right-radius: 50px 50px;
     box-shadow: 5px 5px 10px green;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
     
 }
 
 .tecnologias{
-    
-    align-items: center;
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -223,8 +229,6 @@ body{
 }
 
 .logos{
-    /*width: 70%;
-    height: 70%;*/
     width: 100px;
     height: 100px;
     margin-right: 40px;
@@ -251,6 +255,7 @@ body{
 
 #contact h2{
     margin-bottom: 2%;
+    margin-top: -2%;
     text-align: center;
     color: #EAEBED;
 }
@@ -288,6 +293,7 @@ input[type="submit"] {
 
 footer{
     display: flex;
+    width: 100vw;
     flex-direction: row;
     background-color: black;
     align-items: center;
@@ -314,22 +320,25 @@ footer{
 .iconos-social{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-content: center;
     flex-direction: row;
     margin-top: 3%;
-    margin-left: 33%;
+    margin-left: 20%;
+    margin-right: 20%;
+    
 }
 
 .logos-social{
-    width: 30px;
-    height: 30px;
-    margin-right: 40px;
+    width: 20px;
+    height: 20px;
+    
     margin-bottom: 40%;
     
 }
 
 #media h2{
-    margin-left: 37.5%;
+    text-align: center;
     margin-bottom: 2%;
     
     color: #EAEBED;
@@ -340,6 +349,16 @@ footer{
     h1{
         font-size: x-large;
     }
+    .container-about{
+        flex-direction: column;
+        text-align: center;
+    }
+    .container-about p{
+        margin-left: 2%;
+    }
+    #media h2{
+        font-size: x-large;
+    }
 }
 
 @media screen and (max-width: 620px){
@@ -348,6 +367,13 @@ footer{
     }
     #flecha{
         height: 6%;
+    }
+    .logos{
+        width: 60px;
+        height: 60px;
+    }
+    #media h2{
+        font-size: larger;
     }
 }
 
@@ -362,6 +388,10 @@ footer{
     #logo{
         width: 45px;
         height: 45px;
+    }
+    .logos{
+        width: 40px;
+        height: 40px;
     }
 }
 
