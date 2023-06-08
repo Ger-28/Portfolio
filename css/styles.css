@@ -10,12 +10,48 @@ html{
     scroll-behavior: smooth;
 }
 
-h1{
+#inicio{
+    justify-content: center;
     text-align: center;
     color: #EAEBED;
+    height: 100vh;
+    background-color: black;
+    box-shadow: 0px 5px 10px green;
 }
 
-p{
+h1{
+    align-self: center;
+    position: absolute;
+    top: 50%;
+    left: 23%;
+    animation: typing 10s steps(49), blink .5s, infinite step-end alternate;
+    overflow: hidden;
+}
+h1 span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background-color: black;
+    border-left: 1px solid green;
+    animation: maquina 3s  alternate steps(49), blink .5s infinite step-end alternate 5s;
+    
+}
+
+@keyframes maquina{
+    from{
+        width: 100%;
+    }
+}
+
+@keyframes blink{
+    50%{border-color: transparent;}
+}
+
+h2{
+    margin-bottom: 2%;
+    
+    color: #EAEBED;
+    margin-top: 2%;
 }
 
 #intro{
@@ -23,16 +59,36 @@ p{
     
 }
 
+#flecha{
+    background-color: green;
+    border-radius: 50%;
+    height: 8%;
+    width: auto;
+    position: absolute;
+    top: 85%;
+    left: 47.5%;
+    animation-name: bounce;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+}
+
 header{
     position: fixed;
     top: 0;
     z-index: 1;
     min-width: 100%;
-    box-shadow: 0px 5px 3px;
+    border-bottom: solid green;
+    margin-bottom: 300px;
 }
 
 body{
-    margin-top: 60px;
+    
     font-family: 'Inconsolata', sans-serif;
     background-color: #2b2b30;
 }
@@ -57,6 +113,7 @@ body{
 .menu a{
     color: #EAEBED;
     text-decoration: none;
+    
 }
 
 .menu a:hover{
@@ -64,8 +121,8 @@ body{
 }
 
 #logo{
-    width: 4%;
     height: 4%;
+    width: 4%;
     margin-left: 1%;
 }
 
@@ -90,6 +147,11 @@ body{
     margin: 10px;
 }
 
+#img-project{
+    height: 100%;
+    width: 100%;
+}
+
 .container-about{
     flex-direction: row;
     display: flex;
@@ -100,6 +162,12 @@ body{
     border-bottom-right-radius: 50px 50px;
     box-shadow: 5px 5px 10px green;
     margin-bottom: 5%;
+}
+
+.container-about a{
+    height: 40%;
+    width: 40%;
+    margin: 10px;
 }
 
 .container-tecnologias{
@@ -150,7 +218,7 @@ body{
     margin-bottom: 40%;
 }
 
-.logos:hover{
+.logos:hover,.logos-social:hover{
     box-shadow: 0px 5px 10px green;
     transform: translate(0px,-5px);
     -webkit-transform: translate(0px,-5px);
@@ -178,6 +246,9 @@ form {
     width: 400px;
     margin: 0 auto;
     margin-bottom: 5%;
+    background-color: black;
+    box-shadow: 0px 5px 5px green;
+    padding: 2%;
 }
 
 label {
@@ -204,8 +275,49 @@ input[type="submit"] {
 
 footer{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     background-color: black;
     align-items: center;
-    height: 200px;
+    border-top: solid green;
+    
+}
+
+#copy{
+    width: 50%;
+}
+
+#copy p{
+    color: #EAEBED;
+    text-align: center;
+}
+
+#media{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 50%;
+}
+
+.iconos-social{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: row;
+    margin-top: 3%;
+    margin-left: 33%;
+}
+
+.logos-social{
+    width: 30px;
+    height: 30px;
+    margin-right: 40px;
+    margin-bottom: 40%;
+    
+}
+
+#media h2{
+    margin-left: 37.5%;
+    margin-bottom: 2%;
+    
+    color: #EAEBED;
 }
