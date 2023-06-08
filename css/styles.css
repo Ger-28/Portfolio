@@ -11,29 +11,31 @@ html{
 }
 
 #inicio{
+    display: flex;
     justify-content: center;
-    text-align: center;
     color: #EAEBED;
     height: 100vh;
+    width: 100vw;
     background-color: black;
     box-shadow: 0px 5px 10px green;
 }
 
-h1{
-    align-self: center;
+h1{ 
     position: absolute;
-    top: 50%;
-    left: 23%;
+    text-align: center;
+    margin-top: 50vh;
+    white-space: nowrap;
     animation: typing 10s steps(49), blink .5s, infinite step-end alternate;
     overflow: hidden;
 }
 h1 span{
     position: absolute;
+    align-self: center;
     right: 0;
     width: 0;
     background-color: black;
     border-left: 1px solid green;
-    animation: maquina 3s  alternate steps(49), blink .5s infinite step-end alternate 5s;
+    animation: maquina 3s  steps(49), blink .5s infinite step-end alternate 5s;
     
 }
 
@@ -60,13 +62,12 @@ h2{
 }
 
 #flecha{
+    position: relative;
     background-color: green;
     border-radius: 50%;
     height: 8%;
     width: auto;
-    position: absolute;
-    top: 85%;
-    left: 47.5%;
+    top: 80%;
     animation-name: bounce;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
@@ -320,4 +321,27 @@ footer{
     margin-bottom: 2%;
     
     color: #EAEBED;
+}
+
+
+@media screen and (max-width: 800px){
+    h1{
+        font-size: x-large;
+    }
+}
+
+@media screen and (max-width: 620px){
+    h1{
+        font-size: large;
+    }
+    #flecha{
+        height: 6%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    h1{
+        font-size: medium;
+    }
+    
 }
