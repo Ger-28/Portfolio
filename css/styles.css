@@ -42,10 +42,12 @@ header{
 
 h1{ 
     position: absolute;
+    
     text-align: center;
     margin-top: 50vh;
     white-space: nowrap;
     animation: typing 10s steps(49), blink .5s, infinite step-end alternate;
+    -webkit-animation: typing 10s steps(49), blink .5s, infinite step-end alternate;
     overflow: hidden;
 }
 h1 span{
@@ -91,6 +93,9 @@ h2{
     animation-name: bounce;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
+    -webkit-animation-name: bounce;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
 }
 
 @keyframes bounce {
@@ -350,7 +355,14 @@ footer{
     h1{
         font-size: medium;
     }
-    
+    .navBar{
+        font-size: 100%;
+        height: 50%;
+    }
+    #logo{
+        width: 45px;
+        height: 45px;
+    }
 }
 
 @media screen and (max-width: 400px){
